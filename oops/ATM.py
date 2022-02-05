@@ -29,17 +29,21 @@ while True:
          choice=int(input("Enter choice="))
          if choice==1:
              print(x1.balance(5000))
+             break
          if choice==2:
              print(x1.balance(5000))
              print("Updated Balance=",x1.deposit())
+             break
          if choice==3:
              print(x1.balance(5000))
              print("Updated Balance",x1.withdraw())
+             break
     else:
           print("Enter valid pin")
           trail=trail-1
           if trail==0:
              print("Your card is blocked")
+             break
           else:
              print("Your trail left",trail) 
     
